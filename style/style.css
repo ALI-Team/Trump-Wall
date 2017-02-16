@@ -108,7 +108,7 @@ html, body {
   margin: 0;
   padding: 0; }
 
-.page-header {
+.appbar {
   background-color: #ff9800;
   height: 56px;
   display: flex;
@@ -136,5 +136,9 @@ html, body {
 
 .appbar__button:active {
   background-color: rgba(255, 255, 255, 0.3); }
+
+@media (min-width: 801px) {
+  .appbar {
+    height: 64px; } }
 
 /*# sourceMappingURL=style.css.map */
