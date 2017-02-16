@@ -1,0 +1,26 @@
+$primary-color: #ff9800; //orange-500
+$primary-color--dark: #f57c00; //orange-700
+$accent-color: #40c4ff; //blue-[1-9]{3}
+
+@import "shadows";
+@import "typography";
+
+html,body {
+    margin: 0;
+    padding: 0;
+}
+
+.page-header {
+    background-color: $primary-color;
+    height: 56px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    @include card(1);
+}
+
+.appbar-title {
+  @extend .md-title;
+  color: white;
+}

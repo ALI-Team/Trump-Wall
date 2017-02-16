@@ -1,0 +1,114 @@
+/**
+ * Computes a top-shadow for a card effect.
+ *
+ * @param {Number} $depth - depth level
+ *
+ * @return {List}
+ */
+/**
+ * Computes a bottom-shadow for a card effect.
+ *
+ * @param {Number} $depth - depth level
+ *
+ * @return {List}
+ */
+/**
+ * Gives a card depth effect.
+ *
+ * @param {Number} $depth - depth level (between 1 and 5)
+ *
+ * @link http://www.google.com/design/spec/layout/layout-principles.html#layout-principles-dimensionality Google Design
+ *
+ * @requires {function} top-shadow
+ * @requires {function} bottom-shadow
+ */
+body {
+  font-family: "Roboto", sans-serif; }
+
+.md-display1 {
+  font-size: 34px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.54); }
+
+.md-display2 {
+  font-size: 45px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.54); }
+
+.md-display3 {
+  font-size: 56px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.54); }
+
+.md-display4 {
+  font-size: 112px;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.54); }
+
+.md-headline {
+  font-size: 24px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.87); }
+
+.md-title, .appbar-title {
+  font-size: 20px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.87); }
+
+.md-subheading {
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.87);
+  margin-top: 1em;
+  margin-bottom: 1em; }
+
+.md-body1, .md-subtitle {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.87); }
+
+.md-body2 {
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.87); }
+
+.md-subtitle {
+  color: rgba(0, 0, 0, 0.54); }
+
+.md-caption {
+  font-size: 12px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.54); }
+
+.md-code {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.87); }
+
+@media (min-width: 801px) {
+  .md-subheading {
+    font-size: 15px; }
+
+  .md-body1, .md-subtitle {
+    font-size: 13px; }
+
+  .md-body2 {
+    font-size: 13px; } }
+html, body {
+  margin: 0;
+  padding: 0; }
+
+.page-header {
+  background-color: #ff9800;
+  height: 56px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 1.5px 4px rgba(0, 0, 0, 0.24), 0 1.5px 6px rgba(0, 0, 0, 0.12); }
+
+.appbar-title {
+  color: white; }
+
+/*# sourceMappingURL=style.css.map */
