@@ -95,6 +95,15 @@ body {
 
   .md-body2 {
     font-size: 13px; } }
+.md-button, .appbar__button {
+  font-size: 14px;
+  font-weight: 500;
+  background: none;
+  border: none; }
+
+.md-button:focus, .appbar__button:focus {
+  outline: none; }
+
 html, body {
   margin: 0;
   padding: 0; }
@@ -109,6 +118,23 @@ html, body {
   box-shadow: 0 1.5px 4px rgba(0, 0, 0, 0.24), 0 1.5px 6px rgba(0, 0, 0, 0.12); }
 
 .appbar-title {
-  color: white; }
+  color: white;
+  margin-left: 16px; }
+
+.appbar-controls {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-right: 4px; }
+
+.appbar__button {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  transition: background-color 0.150s; }
+  .appbar__button .material-icons {
+    color: white; }
+
+.appbar__button:active {
+  background-color: rgba(255, 255, 255, 0.3); }
 
 /*# sourceMappingURL=style.css.map */
