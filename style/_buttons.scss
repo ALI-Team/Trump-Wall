@@ -8,3 +8,22 @@
 .md-button:focus {
     outline: none;
 }
+
+.md-button--fab {
+    @extend .md-button;
+    @include card(2);
+    width: 56px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 28px;
+    background-color: $accent-color;
+    .material-icons {
+	@if lightness($accent-color) < 0.5 {
+	    color: white;
+	} @else {
+	    color: rgba(0,0,0,0.54);
+	}
+    }
+}
