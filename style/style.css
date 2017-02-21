@@ -112,7 +112,11 @@ body {
   align-items: center;
   justify-content: center;
   border-radius: 28px;
-  background-color: #64FFDA; }
+  background-color: #64FFDA;
+  transition: all 0.1s; }
+  .md-button--fab:active {
+    background-color: #97ffe6;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.23), 0 10px 40px rgba(0, 0, 0, 0.19); }
   .md-button--fab .material-icons {
     color: rgba(0, 0, 0, 0.54); }
 
