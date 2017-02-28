@@ -58,8 +58,17 @@ html,body {
     }
 }
 
-.main-content {
+.main-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
 
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 @media (min-width: 801px) {
