@@ -1,9 +1,6 @@
 $primary-text-color: rgba(0,0,0,0.87);
 $secondary-text-color: rgba(0,0,0,0.54);
 
-$primary-text-color: rgba(0,0,0,0.87);
-$secondary-text-color: rgba(0,0,0,0.54);
-
 body {
     font-family: "Roboto", sans-serif;
 }
@@ -81,6 +78,12 @@ body {
     font-size: 14px;
     font-weight: 400;
     color: $primary-text-color;
+}
+
+.md-tiny-link {
+    font-size: 12px;
+    font-weight: 500;
+    color: $secondary-text-color;
 }
 
 @media (min-width: 801px) {
