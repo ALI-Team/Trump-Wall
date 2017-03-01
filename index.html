@@ -8,6 +8,7 @@
     <meta name="theme-color" content="#ff9800">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/index.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&amp;subset=cyrillic" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="style/style.css" rel="stylesheet">
@@ -24,21 +25,29 @@
     <div class="main-container">
         <main class="main-content">
             <div class="fact">
-                <div class="fact__action-area">
-                    <div class="fact__action-container">
-                        <button class="star-button star-button--starred">
+                <div class="fact__left-aligned">
+                    <div class="fact__action-area">
+                        <div class="fact__action-container">
+                            <button class="star-button star-button--starred">
                           <i class="material-icons">star</i>
                         </button>
-                        <p class="md-caption">6.9k</p>
+                            <p class="md-caption">6.9k</p>
+                        </div>
                     </div>
+                    <div class="fact__content-container">
+                        <div class="fact__content">
+                            <p class="md-headline">Mexicans are just jews but their black</p>
+                        </div>
+                        <div class="fact__info-container">
+                            <p class="md-tiny-link">420 alternative facts</p>
+                        </div>
+                    </div>
+                    </p>
                 </div>
-                <div class="fact__content-container">
-                    <div class="fact__content">
-                        <p class="md-headline">Mexicans are just jews but their black</p>
-                    </div>
-                    <div class="fact__info-container">
-                        <p class="md-tiny-link">420 alternative facts</p>
-                    </div>
+                <div class="fact__expand-container">
+                    <button class="expand-button">
+                      <i class="material-icons">expand_more</i>
+                    </button>
                 </div>
             </div>
         </main>

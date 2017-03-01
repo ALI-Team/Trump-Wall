@@ -105,7 +105,12 @@ p {
     width: 100%;
     border-radius: 2px;
     display: flex;
+    justify-content: space-between;
     @include card(1);
+}
+
+.fact__left-aligned {
+    display: flex;
 }
 
 .fact__action-area {
@@ -140,6 +145,24 @@ p {
 .fact__content-container {
     display: flex;
     flex-direction: column;
+}
+
+.fact__expand-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.expand-button {
+    @extend .md-button;
+    transition: transform 0.1s;
+    .material-icons {
+        color: $secondary-text-color;
+    }
+}
+
+.expand-button--expanded {
+    transform: rotate(180deg);
 }
 
 .fact__content {}

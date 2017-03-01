@@ -100,13 +100,13 @@ body {
 
   .md-body2 {
     font-size: 13px; } }
-.md-button, .md-button--fab, .appbar__button, .star-button {
+.md-button, .md-button--fab, .appbar__button, .star-button, .expand-button {
   font-size: 14px;
   font-weight: 500;
   background: none;
   border: none; }
 
-.md-button:focus, .md-button--fab:focus, .appbar__button:focus, .star-button:focus {
+.md-button:focus, .md-button--fab:focus, .appbar__button:focus, .star-button:focus, .expand-button:focus {
   outline: none; }
 
 .md-button--fab {
@@ -208,7 +208,11 @@ p {
   width: 100%;
   border-radius: 2px;
   display: flex;
+  justify-content: space-between;
   box-shadow: 0 1.5px 4px rgba(0, 0, 0, 0.24), 0 1.5px 6px rgba(0, 0, 0, 0.12); }
+
+.fact__left-aligned {
+  display: flex; }
 
 .fact__action-area {
   display: flex;
@@ -231,6 +235,19 @@ p {
 .fact__content-container {
   display: flex;
   flex-direction: column; }
+
+.fact__expand-container {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.expand-button {
+  transition: transform 0.1s; }
+  .expand-button .material-icons {
+    color: rgba(0, 0, 0, 0.54); }
+
+.expand-button--expanded {
+  transform: rotate(180deg); }
 
 @media (min-width: 801px) {
   .appbar {
