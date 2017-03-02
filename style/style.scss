@@ -106,7 +106,11 @@ p {
     border-radius: 2px;
     display: flex;
     justify-content: space-between;
+    flex-shrink: 0;
     @include card(1);
+    &:not(:first-child) {
+	margin-top: 16px;
+    }
 }
 
 .fact__left-aligned {

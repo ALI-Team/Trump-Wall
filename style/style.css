@@ -209,7 +209,10 @@ p {
   border-radius: 2px;
   display: flex;
   justify-content: space-between;
+  flex-shrink: 0;
   box-shadow: 0 1.5px 4px rgba(0, 0, 0, 0.24), 0 1.5px 6px rgba(0, 0, 0, 0.12); }
+  .fact:not(:first-child) {
+    margin-top: 16px; }
 
 .fact__left-aligned {
   display: flex; }
