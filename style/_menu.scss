@@ -4,10 +4,11 @@
     flex-direction: column;
     width: 100px;
     height: 100px;
-    background-color: red;
     z-index: 2;
     right: 0;
     top: 0;
+    background-color: white;
+    @include card(1);
     transition: all 0.3s ease;
     transform: scale(0);
     transform-origin: 50% 25%;

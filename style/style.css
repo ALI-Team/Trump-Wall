@@ -134,10 +134,11 @@ body {
   flex-direction: column;
   width: 100px;
   height: 100px;
-  background-color: red;
   z-index: 2;
   right: 0;
   top: 0;
+  background-color: white;
+  box-shadow: 0 1.5px 4px rgba(0, 0, 0, 0.24), 0 1.5px 6px rgba(0, 0, 0, 0.12);
   transition: all 0.3s ease;
   transform: scale(0);
   transform-origin: 50% 25%; }
