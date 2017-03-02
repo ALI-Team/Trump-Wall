@@ -20,15 +20,24 @@
     border-radius: 28px;
     background-color: $accent-color;
     transition: all 0.1s;
+
     &:active {
-	background-color: lighten($accent-color, 10%);
-	@include card(3);
+        background-color: lighten($accent-color, 10%);
+        @include card(3);
     }
+
     .material-icons {
-	@if lightness($accent-color) < 0.5 {
-	    color: white;
-	} @else {
-	    color: rgba(0,0,0,0.54);
-	}
+        @if lightness($accent-color) < 0.5 {
+            color: white;
+        }
+        @else {
+            color: rgba(0,0,0,0.54);
+        }
+    }
+}
+
+.md-button--menu:active {
+    .md-menu {
+        transform: scale(1);
     }
 }
