@@ -214,6 +214,14 @@ p {
   .fact--main-container:not(:first-child) {
     margin-top: 16px; }
 
+.fact--expanded-container {
+  background-color: #FFF;
+  box-shadow: 0 1.5px 4px rgba(0, 0, 0, 0.24), 0 1.5px 6px rgba(0, 0, 0, 0.12);
+  display: none; }
+
+.fact.fact--expanded .fact--expanded-container {
+  display: flex; }
+
 .fact__left-aligned {
   display: flex; }
 

@@ -113,6 +113,16 @@ p {
     }
 }
 
+.fact--expanded-container {
+    background-color: #FFF;
+    @include card(1);
+    display: none;
+}
+
+.fact.fact--expanded .fact--expanded-container {
+    display: flex;
+}
+
 .fact__left-aligned {
     display: flex;
 }
