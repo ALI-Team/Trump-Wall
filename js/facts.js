@@ -1,7 +1,5 @@
 $(() => {
-    $(".expand-button").on("click", function(ev) {
-	$(this).toggleClass("expand-button--expanded");
-    });
+    createFact("Mexicans are just jews but their black", 420, 69);
 });
 
 
@@ -36,7 +34,7 @@ function createFact(title, upvotes, altFacts) {
 			$("<i></i>", {"class": "material-icons"}).text("expand_more")
 		    ).on("click", function(ev) {
 			$(this).toggleClass("expand-button--expanded");
-			$(this).closest(".fact").toggleClass("fact--expanded"
+			$(this).closest(".fact").toggleClass("fact--expanded");
 		    })
 		)
 	    )
