@@ -8,6 +8,7 @@
     <meta name="theme-color" content="#ff9800">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/js.cookie.js"></script>
     <script src="js/index.js"></script>
     <script src="js/facts.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&amp;subset=cyrillic" rel="stylesheet">
@@ -16,20 +17,20 @@
 </head>
 
 <body>
-    <div id="composedialogcontainer">
+    <div id="composedialogcontainer" style="display:none;">
     <div id="composedialog">
       <div id="composedialogcontent">
-        <textarea id="composearea" maxlength=280 placeholder="Write down you racist thoughts..."></textarea>
+        <textarea id="composearea" maxlength=280 placeholder="Write down your racist thoughts..."></textarea>
           <div id="composebuttomcontainer">
-            <button id="composesubmit">DISCARD</button>
-        <button id="composesubmit">SEND</button>
+            <button class="composebutton" id="composediscard">DISCARD</button>
+        <button class="composebutton" id="composesubmit">SEND</button>
 
       </div>
     </div>
   </div>
 </div>
 
-    <div id="dialog-bg-tint">
+    <div id="dialog-bg-tint" style="display:none;">>
     </div>
     <header class="appbar">
         <h1 class="appbar-title">Trump Wall</h1>
