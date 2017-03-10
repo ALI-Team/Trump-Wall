@@ -121,6 +121,7 @@ p {
 
 .fact.fact--expanded .fact--expanded-container {
     display: flex;
+    flex-direction: column;
 }
 
 .fact__left-aligned {

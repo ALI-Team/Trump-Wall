@@ -1,3 +1,8 @@
+.altfactdiv{
+  display: flex;
+  align-items: center;
+}
+
 #dialog-bg-tint{
   background-color: rgba(0,0,0,0.3);
   position: absolute;
@@ -73,4 +78,15 @@ background-color:rgba(0,0,0,0.15);
 .composebutton:focus{
 outline:none;
 
+}
+.altfactcomposeinput:focus{
+outline:none;
+
+}
+.altfactcomposeinput{
+  border:none;
+  width: 100%;
+  border-bottom: $accent-color 2px solid;
+  margin-top: 8px;
+  margin-bottom: 8px;
 }

@@ -125,6 +125,10 @@ body {
   .md-button--fab .material-icons {
     color: rgba(0, 0, 0, 0.54); }
 
+.altfactdiv {
+  display: flex;
+  align-items: center; }
+
 #dialog-bg-tint {
   background-color: rgba(0, 0, 0, 0.3);
   position: absolute;
@@ -198,6 +202,16 @@ body {
 
 .composebutton:focus {
   outline: none; }
+
+.altfactcomposeinput:focus {
+  outline: none; }
+
+.altfactcomposeinput {
+  border: none;
+  width: 100%;
+  border-bottom: #64FFDA 2px solid;
+  margin-top: 8px;
+  margin-bottom: 8px; }
 
 body,
 html {
@@ -294,7 +308,8 @@ p {
   display: none; }
 
 .fact.fact--expanded .fact--expanded-container {
-  display: flex; }
+  display: flex;
+  flex-direction: column; }
 
 .fact__left-aligned {
   display: flex; }

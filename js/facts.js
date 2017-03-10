@@ -13,6 +13,22 @@ function publishFact(msg){
    });
 	//$.post("http://tux.ivar.tech:5000/createfact",{"response":"","text":"IMA FUCK A WHITE BITCH","author":"69"})
 }
+function publishAltFact(msg,id){
+  token=Cookies.get('token');
+  if (token === undefined){
+    alert("something bad happend, something worse then obama getting elected")
+    return
+  }
+   $.ajax({
+      type: "POST",
+      contentType: "application/json",
+      url: 'http://trumpwall.ru:5000/createfact',
+      data: JSON.stringify({"response":id,"fact":msg,"author":token}),
+      dataType: "json"
+   });
+	//$.post("http://tux.ivar.tech:5000/createfact",{"response":"","text":"IMA FUCK A WHITE BITCH","author":"69"})
+}
+
 function updateFacts(){
   req={}
   token=Cookies.get('token');
@@ -33,7 +49,7 @@ return
     $(".main-content").empty()
     i=0
     while (i<data.length){
-      createFact(data[i]["fact"],-1,-1)
+      createFact(data[i]["fact"],data[i]["id"],-1,-1)
       i=i+1
     }
 
