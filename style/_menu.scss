@@ -1,15 +1,38 @@
-.md-menu {
+.md-menu__hidden {
     position: absolute;
     display: flex;
     flex-direction: column;
     width: 100px;
     height: 100px;
     z-index: 2;
-    right: 0;
-    top: 0;
+    right: 0px;
+    top: 0px;
     background-color: white;
     @include card(1);
     transition: all 0.3s ease;
     transform: scale(0);
     transform-origin: 50% 25%;
 }
+
+.md-menu__shown {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+  height: 100px;
+  z-index: 2;
+  right: 0px;
+  top: 0px;
+  background-color: white;
+  @include card(1);
+  transition: all 0.3s ease;
+  transform: scale(1);
+  transform-origin: 50% 25%;
+  opacity: 1;
+}
+
+/*
+transition: all 0.3s ease;
+transform: scale(0);
+transform-origin: 50% 25%;
+*/
