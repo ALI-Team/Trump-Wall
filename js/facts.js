@@ -49,7 +49,7 @@ return
     $(".main-content").empty()
     i=0
     while (i<data.length){
-      createFact(data[i]["fact"],data[i]["id"],-1,-1)
+      createFact(data[i]["fact"],data[i]["id"],-1,data[i]["altfacts"])
       i=i+1
     }
 
