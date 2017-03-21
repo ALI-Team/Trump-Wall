@@ -26,5 +26,9 @@ $(function() {
     		}
 		isEventAlreadyHandled = false;
 	})
+
+	$('.material-switch').on('click tap', function(){
+  		$(this).toggleClass('enabled');
+	})
 })
 

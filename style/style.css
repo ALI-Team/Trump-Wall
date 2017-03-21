@@ -140,7 +140,7 @@ body {
   top: 0px;
   background-color: white;
   box-shadow: 0 1.5px 4px rgba(0, 0, 0, 0.24), 0 1.5px 6px rgba(0, 0, 0, 0.12);
-  transition: all 0.3 ease-out;
+  transition: all 0.3 ease-in;
   transform: scale(0);
   transform-origin: 100% 0%; }
 
@@ -264,6 +264,41 @@ transform-origin: 50% 25%;
   border-bottom: #64FFDA 2px solid;
   margin-top: 8px;
   margin-bottom: 8px; }
+
+.material-switch {
+  width: 40px;
+  height: 28px;
+  position: relative;
+  cursor: pointer; }
+  .material-switch.enabled .guide {
+    background: #FFE0B2; }
+  .material-switch.enabled .toggle {
+    background: #ff9800;
+    transform: translateX(20px); }
+  .material-switch:active .toggle {
+    background: #f6f6f6;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.36), 0 0 1px rgba(0, 0, 0, 0.12); }
+  .material-switch .guide {
+    position: absolute;
+    width: 34px;
+    height: 14px;
+    top: 5px;
+    left: 2px;
+    background: rgba(34, 31, 31, 0.26);
+    border-radius: 7px;
+    transition: background .15s ease;
+    will-change: background; }
+  .material-switch .toggle {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    top: 2px;
+    left: 0;
+    background: #F1F1F1;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.24), 0 0 1px rgba(0, 0, 0, 0.12);
+    transition: background .15s ease, box-shadow .15s ease, transform .15s ease;
+    will-change: background, box-shadow, transform; }
 
 body,
 html {
