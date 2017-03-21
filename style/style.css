@@ -217,9 +217,13 @@ body {
   margin-top: 8px;
   margin-bottom: 8px; }
 
-body,
-html {
+body {
   height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0; }
+
+html {
   width: 100%;
   margin: 0;
   padding: 0; }
