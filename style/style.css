@@ -183,7 +183,7 @@ transform-origin: 50% 25%;
 
 #dialog-bg-tint {
   background-color: rgba(0, 0, 0, 0.3);
-  position: absolute;
+  position: fixed;
   width: 100%;
   height: 100%;
   top: 0px;
@@ -449,9 +449,8 @@ p {
     padding-top: 64px; }
 
   .main-content {
-    padding: 24px; }
-
-  .fact {
-    padding: 16px; } }
+    padding: 24px; } }
+.fact {
+  padding: 16px; }
 
 /*# sourceMappingURL=style.css.map */
